@@ -7,18 +7,18 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the number of subjects: ");
-        int numSubjects = scanner.nextInt();
+        int TotalSub = scanner.nextInt();
 
-       int[] marks = new int[numSubjects];
-        int totalMarks = 0;
+       int[] marks = new int[TotalSub];
+        int TotalMarks = 0;
 
-        for (int i = 0; i < numSubjects; i++) {
+        for (int i = 0; i < TotalSub; i++) {
             System.out.print("Enter marks obtained in subject " + (i + 1) + ": ");
             marks[i] = scanner.nextInt();
-            totalMarks += marks[i];
+            TotalMarks += marks[i];
         }
 
-        double averagePercentage = (double) totalMarks / numSubjects;
+        double averagePercentage = (double) TotalMarks / TotalSub;
 
 
         char grade;
@@ -35,7 +35,7 @@ public class Task2 {
         }
 
         System.out.println("----------------------------");
-        System.out.println("Total Marks: " + totalMarks);
+        System.out.println("Total Marks: " + TotalMarks);
         System.out.printf("Average Percentage: %.2f%%\n", averagePercentage);
         System.out.println("Grade: " + grade);
 
