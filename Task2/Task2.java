@@ -9,7 +9,7 @@ public class Task2 {
         System.out.print("Enter the number of subjects: ");
         int TotalSub = scanner.nextInt();
 
-       int[] marks = new int[TotalSub];
+        int[] marks = new int[TotalSub];
         int TotalMarks = 0;
 
         for (int i = 0; i < TotalSub; i++) {
